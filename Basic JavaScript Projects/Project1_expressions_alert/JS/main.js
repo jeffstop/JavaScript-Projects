@@ -18,3 +18,9 @@ var D = D.fontcolor("orange");
 document.write(D);
 
 document.write(4+82);
+
+function My_First_Function () {
+    var str = "This text is green!";
+    var result = str.fontcolor("green");
+    document.getElementById("Green_Text") .innerHTML = result;
+}
