@@ -9,3 +9,8 @@ function myFunction() {         // Defining a function
     sentence += " a lot from this course!";         // Using an operator to concatenate a string
     document.getElementById("Concatenate").innerHTML = sentence;        // Defining which element will use the function
 }
+
+function demo(p, q) {
+    return p * q;
+}
+document.getElementById("example").innerHTML = demo(5, 6);
