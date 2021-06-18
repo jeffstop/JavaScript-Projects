@@ -35,3 +35,10 @@ window.alert(Math.random());        // Displaying random number between 1 and 0 
 window.alert(Math.random() * 100);      // Displaying random number between 0 and 100 as an alert
 
 document.getElementById("Math_7").innerHTML = Math.round(Math.PI);      // Displaying Pi to the nearest round number. This will display on top of the increment and decrement functions, because this function displays in a specified <p> with id "Math_7"
+
+
+// This function is not displaying. If I move the document.getElementById outside of the curly brackets it still won't work (says the variable is declared but the value is never read)
+function addition_Function() {
+    var addition = 2 + 2
+    document.getElementById("Math_8").innerHTML = "2 + 2 = " + addition;
+}
