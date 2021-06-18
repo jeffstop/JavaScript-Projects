@@ -3,6 +3,9 @@ var y = 2;      // Defining y variable as a value of 2
 var z = x - y;      // Defining z variable as a value of y variable subtracted from x variable
 document.getElementById("Math").innerHTML = z;      // Displaying result of z variable
 
+var q = x + 3;      // Defining q variable as the result of the x variable added to 3
+document.getElementById("Math_1").innerHTML = q;        // Displaying result of q variable
+
 var t = x * y;      // Defining t variable as the product of x variable and y variable
 document.getElementById("Math_2").innerHTML = t;         // Displaying result of t variable
 
