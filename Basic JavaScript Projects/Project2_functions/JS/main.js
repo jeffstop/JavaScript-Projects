@@ -13,4 +13,4 @@ function myFunction() {         // Defining a function
 function demo(p, q) {
     return p * q;
 }
-document.getElementById("example").innerHTML = demo(5, 6);
+document.getElementById("example").innerHTML = demo(5, 6);      // Only displays if <script> is at the bottom of <body>
