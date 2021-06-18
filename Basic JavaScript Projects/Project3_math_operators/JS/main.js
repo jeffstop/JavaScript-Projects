@@ -30,3 +30,5 @@ document.write(k);      // Displaying result of decrementing k variable (This wi
 window.alert(Math.random());        // Displaying random number between 1 and 0 as an alert
 
 window.alert(Math.random() * 100);      // Displaying random number between 0 and 100 as an alert
+
+document.getElementById("Math_7").innerHTML = Math.round(Math.PI);      // Displaying Pi to the nearest round number. This will display on top of the increment and decrement functions, because this function displays in a specified <p> with id "Math_7"
