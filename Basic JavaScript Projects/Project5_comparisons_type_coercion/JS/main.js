@@ -63,3 +63,19 @@ function my_Function12() {
     var H = 8;
     document.getElementById("test_12").innerHTML = G === H;
 }
+
+function my_Function13() {
+    document.getElementById("test_13").innerHTML = 876 > 3 && 78 > 8;
+}
+
+function my_Function14() {
+    document.getElementById("test_14").innerHTML = 7 > 3 && 3 > 5;
+}
+
+function my_Function15() {
+    document.getElementById("test_15").innerHTML = 4 > 3 || 5 > 12;
+}
+
+function my_Function16() {
+    document.getElementById("test_16").innerHTML = 5 > 6 || 12 > 54;
+}
