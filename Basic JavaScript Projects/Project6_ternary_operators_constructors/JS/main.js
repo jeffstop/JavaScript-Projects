@@ -33,3 +33,13 @@ var Frank = new Student(15, 2.85);
 function Student_Function() {
     document.getElementById("New_and_This").innerHTML = "Nancy has a " + Nancy.Student_GPA + " GPA, while only being " + Nancy.Student_Age + ".";
 }
+
+function count_Function() {
+    document.getElementById("Nested_Function").innerHTML = Count();
+    function Count() {
+        var Starting_point = 8;
+        function Plus_one() {Starting_point += 1;}
+        Plus_one();
+        return Starting_point;
+    }
+}
