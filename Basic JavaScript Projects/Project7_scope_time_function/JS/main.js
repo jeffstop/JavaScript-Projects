@@ -1,6 +1,6 @@
 var X = 15;
 function Add_Numbers_1() {
-    document.write(13 + X + "<br>");
+    document.write("<br>" + (13 + X) + "<br>");
 }
 Add_Numbers_1();
 
@@ -41,4 +41,19 @@ function age_Function() {
         Drink = "You are not old enough to drink.";
     }
     document.getElementById("drinking_age").innerHTML = Drink;
+}
+
+function Time_Function() {
+    var Time = new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time > 0) {
+        Reply = "It is morning time!";
+    }
+    else if (Time >= 12 == Time < 18) {
+        Reply = "It is afternoon";
+    }
+    else {
+        Reply = "It is evening time.";
+    }
+    document.getElementById("Time_of_Day").innerHTML = Reply;
 }
