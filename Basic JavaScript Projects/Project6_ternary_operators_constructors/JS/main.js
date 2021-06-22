@@ -4,13 +4,12 @@ function Vote_Function() {
     document.getElementById("vote").innerHTML = Vote + " to vote.";
 }
 
-class Vehicle {
-    constructor(Make, Model, Year, Color) {
-        this.Vehicle_Make = Make;
-        this.Vehicle_Model = Model;
-        this.Vehicle_Year = Year;
-        this.Vehicle_Color = Color;
-    }
+
+function Vehicle(Make, Model, Year, Color) {
+    this.Vehicle_Make = Make;
+    this.Vehicle_Model = Model;
+    this.Vehicle_Year = Year;
+    this.Vehicle_Color = Color;
 }
 
 var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
@@ -21,4 +20,16 @@ function myFunction() {
     document.getElementById("Keywords_and_Constructors").innerHTML =
     "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model +
     " manufactured in " + Erik.Vehicle_Year;
+}
+
+function Student(Age, GPA,) {
+    this.Student_Age = Age;
+    this.Student_GPA = GPA;
+}
+var Bill = new Student(16, 3.75);
+var Nancy = new Student(17, 3.92);
+var Frank = new Student(15, 2.85);
+
+function Student_Function() {
+    document.getElementById("New_and_This").innerHTML = "Nancy has a " + Nancy.Student_GPA + " GPA, while only being " + Nancy.Student_Age + ".";
 }
