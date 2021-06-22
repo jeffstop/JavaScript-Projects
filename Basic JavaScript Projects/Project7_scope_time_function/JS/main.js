@@ -31,3 +31,14 @@ function another_Function() {
         document.getElementById("another_one").innerHTML = "7 is greater than 2";
     }
 }
+
+function age_Function() {
+    Age = document.getElementById("Age").value;
+    if (Age >= 21) {
+        Drink = "You are old enough to drink.";
+    }
+    else  {
+        Drink = "You are not old enough to drink.";
+    }
+    document.getElementById("drinking_age").innerHTML = Drink;
+}
