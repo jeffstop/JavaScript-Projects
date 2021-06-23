@@ -34,3 +34,14 @@ function precision_Method() {
     var X = 541.54681681646546158;
     document.getElementById("precision").innerHTML = X.toPrecision(8);
 }
+
+function fixed_Method() {
+    var X = 8.6541984;
+    document.getElementById("fixed").innerHTML = X.toFixed(3);
+}
+
+function value_Method() {
+    var X = 12;
+    var n = X.valueOf();
+    document.getElementById("value").innerHTML = n;
+}
