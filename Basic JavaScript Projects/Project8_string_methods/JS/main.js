@@ -29,3 +29,8 @@ function string_Method() {
     var X = 541;
     document.getElementById("numbers").innerHTML = X.toString();
 }
+
+function precision_Method() {
+    var X = 541.54681681646546158;
+    document.getElementById("precision").innerHTML = X.toPrecision(8);
+}
