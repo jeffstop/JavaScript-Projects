@@ -24,3 +24,8 @@ function search_Function() {
     var n = phrase.search("method");
     document.getElementById("search").innerHTML = n;
 }
+
+function string_Method() {
+    var X = 541;
+    document.getElementById("numbers").innerHTML = X.toString();
+}
