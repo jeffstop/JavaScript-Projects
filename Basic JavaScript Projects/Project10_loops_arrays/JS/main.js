@@ -19,3 +19,13 @@ function for_Loop() {
     }
     document.getElementById("List_of_Instruments").innerHTML = Content;
 }
+
+// Array Function
+function array_Function() {
+    var Vehicle = [];
+    Vehicle [0]= "Ford";
+    Vehicle [1]= "Tesla";
+    Vehicle [2]= "Subaru";
+    Vehicle [3]= "Honda";
+    document.getElementById("Array").innerHTML = "The vehicle chosen was manufactured by " + Vehicle[3] + ".";
+}
