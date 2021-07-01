@@ -37,3 +37,22 @@ function constant_function() {
     Musical_Instrument.price = "$900";
     document.getElementById("Constant").innerHTML = "The cost of the " + Musical_Instrument.type + " was " + Musical_Instrument.price;
 }
+
+// Using let keyword
+var X = 734;
+{
+    let X = 50;
+    document.getElementById("using_let").innerHTML = X;
+}
+
+// Using let keyword to create an object with a method
+let car = {
+    make: "Toyota ",
+    model: "Camry",
+    year: "2009 ",
+    color: "blue ",
+    description: function() {
+        return "The car is a " + this.year + this.color + this.make + this.model + ".";
+    }
+};
+document.getElementById("Car_object").innerHTML = car.description();
