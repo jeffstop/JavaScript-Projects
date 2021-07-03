@@ -108,7 +108,7 @@ function checkWinConditions() {
         // This function plays the tie game sound
         audio('./media/tie.wav');
         // This function sets a .3 second timer before the resetGame is called
-        setTimeout(function () {resetGame(); }, 1000);
+        setTimeout(function () {resetGame(); }, 300);
     }
 
     // This function checks if an array includes 3 strings. It is used to check for each win condition
@@ -183,6 +183,12 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             if (y < y2) { y += 10; }
             // This condition cancels the animation loop if the end points have been reached
             if (x >= x2 && y >= y2) { cancelAnimationFrame(animationLoop); }
+        }
+        // This condition is necessary for the 6, 4 , 2 win condition
+        if (x1 <= x2 && y1 >= y2) {
+            if (x < x2) { x += 10; }
+            if(y > y2) { y -= 10; }
+            if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
         }
     }
     
